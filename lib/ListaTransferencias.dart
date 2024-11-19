@@ -5,6 +5,8 @@ import 'lib.dart';
 class ListaTransferencias extends StatefulWidget {
   final List<Transferencia> _transferencia = [];
 
+  ListaTransferencias({super.key});
+
   @override
   State<StatefulWidget> createState() {
     return ListaTransferenciasState();
@@ -27,7 +29,6 @@ class ListaTransferenciasState extends State<ListaTransferencias> {
         },
       ),
       floatingActionButton: FloatingActionButton(
-        child: Icon(Icons.add),
         onPressed: () {
           final Future future =
               Navigator.push(context, MaterialPageRoute(builder: (context) {
@@ -42,6 +43,7 @@ class ListaTransferenciasState extends State<ListaTransferencias> {
           });
         },
         backgroundColor: Colors.blue,
+        child: Icon(Icons.add),
       ),
     );
   }
