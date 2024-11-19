@@ -8,7 +8,6 @@ class BytebankApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        brightness: Brightness.dark,
         buttonTheme: ButtonThemeData(),
       ),
       home: ListaTransferencias(),
