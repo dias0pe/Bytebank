@@ -1,0 +1,10 @@
+^C:\USERS\ALICE\ONEDRIVE\DESKTOP\ALURA\BYTEBANK\BUILD\WINDOWS\X64\CMAKEFILES\70AC1D0ACE9C6481D98F0BBCA98FE31D\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SC:/Users/alice/OneDrive/Desktop/Alura/bytebank/windows -BC:/Users/alice/OneDrive/Desktop/Alura/bytebank/build/windows/x64 --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/alice/OneDrive/Desktop/Alura/bytebank/build/windows/x64/bytebank.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
